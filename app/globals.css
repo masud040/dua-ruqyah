@@ -4,14 +4,13 @@
   --color-primary: #1fa45b;
   --color-secondary: #f7f8fa;
   --color-tertiary: #e8f0f5;
-  --color-gray-200: #f7f8fa;
   --color-black: #393939;
   --color-white: #ffffff;
 }
 
 @layer base {
   * {
-    @apply p-0 m-0 scroll-smooth;
+    @apply bg-secondary p-0 m-0 scroll-smooth;
   }
 
   ::-webkit-scrollbar {
@@ -26,5 +25,32 @@
   }
   ::-webkit-scrollbar-thumb:hover {
     background: #555;
+  }
+}
+
+@layer utilities {
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+  .flex-baseline {
+    @apply flex items-baseline;
+  }
+
+  .flex-between {
+    @apply flex justify-between;
+  }
+
+  .flex-end {
+    @apply flex items-center justify-end;
+  }
+
+  .flex-start {
+    @apply flex items-center justify-start;
+  }
+  .flex-column {
+    @apply flex flex-col;
+  }
+  .grid-center {
+    @apply grid justify-center;
   }
 }
