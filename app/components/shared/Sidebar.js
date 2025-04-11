@@ -6,7 +6,7 @@ import DuaInfo from "@/public/assets/icons/dua_info.svg";
 import Home from "@/public/assets/icons/home.svg";
 import Memorize from "@/public/assets/icons/memorize.svg";
 import Ruqyah from "@/public/assets/icons/ruqyah.svg";
-import Logo from "@/public/assets/logo.png";
+import Logo from "@/public/assets/images/logo.png";
 import Image from "next/image";
 import SidebarLink from "./SidebarLink";
 const Sidebar = () => {

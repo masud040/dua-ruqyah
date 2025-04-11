@@ -3,14 +3,16 @@
 @theme {
   --color-primary: #1fa45b;
   --color-secondary: #f7f8fa;
-  --color-tertiary: #e8f0f5;
+  --color-tertiary-200: #f3f4f6;
+  --color-tertiary-300: #e8f0f5;
+  --color-quaternary: #e2e2e2;
   --color-black: #393939;
   --color-white: #ffffff;
 }
 
 @layer base {
   * {
-    @apply bg-secondary p-0 m-0 scroll-smooth;
+    @apply bg-secondary text-black p-0 m-0 scroll-smooth;
   }
 
   ::-webkit-scrollbar {
