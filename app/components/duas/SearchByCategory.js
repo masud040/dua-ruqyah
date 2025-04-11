@@ -6,7 +6,7 @@ const SearchByCategory = () => {
       <input
         type="text"
         placeholder="Search by Categories"
-        className="w-full text-[#868686] h-[50px] p-[13px] ps-8 border-[1.5px] border-quaternary bg-white focus:outline-none rounded-[7px]"
+        className="w-full text-secondary-300 h-[50px] p-[13px] ps-8 border-[1.5px] border-quaternary bg-white focus:outline-none rounded-[7px]"
       />
 
       <Image

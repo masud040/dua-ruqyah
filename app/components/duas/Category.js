@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useParams } from "next/navigation";
 const Category = ({ category }) => {
   const { category_name } = useParams();
+  //   formatting the category name to match the URL structure
   const formatted_name = category?.title.replace(/ /g, "_");
   return (
     <Link

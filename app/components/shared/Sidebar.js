@@ -1,10 +1,10 @@
 import Bookmarks from "@/public/assets/icons/bookmarks.svg";
 import Books from "@/public/assets/icons/books.svg";
 import DonateIcon from "@/public/assets/icons/donate_icon.svg";
-import Dua from "@/public/assets/icons/dua.svg";
 import DuaInfo from "@/public/assets/icons/dua_info.svg";
 import Home from "@/public/assets/icons/home.svg";
 import Memorize from "@/public/assets/icons/memorize.svg";
+import Menu from "@/public/assets/icons/menu.svg";
 import Ruqyah from "@/public/assets/icons/ruqyah.svg";
 import Logo from "@/public/assets/images/logo.png";
 import Image from "next/image";
@@ -17,7 +17,7 @@ const Sidebar = () => {
       </div>
       <ul className="flex-1 flex-center flex-col gap-[27px] h-full">
         <SidebarLink Icon={Home} Name="Home" Path={"/"} />
-        <SidebarLink Icon={Dua} Name="Dua" Path={"/dua"} />
+        <SidebarLink Icon={Menu} Name="Dua" Path={"/dua"} />
         <SidebarLink Icon={Memorize} Name="Memorize" Path={"/memorize"} />
         <SidebarLink Icon={Bookmarks} Name="Bookmarks" Path={"/bookmarks"} />
         <SidebarLink Icon={Ruqyah} Name="Ruqyah" Path={"/ruqyah"} />

@@ -3,6 +3,7 @@
 @theme {
   --color-primary: #1fa45b;
   --color-secondary: #f7f8fa;
+  --color-secondary-300: #868686;
   --color-tertiary-200: #f3f4f6;
   --color-tertiary-300: #e8f0f5;
   --color-tertiary-400: #7e7e7e;
@@ -58,5 +59,19 @@
   }
   .grid-center {
     @apply grid justify-center;
+  }
+  @keyframes expand {
+    0% {
+      max-height: 0;
+      opacity: 1;
+    }
+    100% {
+      max-height: 200px; /* adjust based on content */
+      opacity: 1;
+    }
+  }
+
+  .animate-expand {
+    animation: expand 0.5s ease-in-out forwards;
   }
 }

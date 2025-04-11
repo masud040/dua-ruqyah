@@ -1,4 +1,5 @@
 import Categories from "@/app/components/duas/Categories";
+import Settings from "@/app/components/shared/Settings";
 
 export default async function DuaCategoriesPage() {
   return (
@@ -11,7 +12,7 @@ export default async function DuaCategoriesPage() {
       {/* category page content */}
       <div className="flex-1 w-full border">dua page content</div>
       {/* settings */}
-      <div className="max-w-[330px] border w-full flex-end"></div>
+      <Settings />
     </section>
   );
 }
