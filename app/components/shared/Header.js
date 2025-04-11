@@ -4,7 +4,7 @@ import Image from "next/image";
 import Search from "../Search";
 const Header = () => {
   return (
-    <div className="flex-center gap-[30px] mt-[22px] w-full">
+    <nav className="flex-center gap-[30px] mt-[22px] w-full">
       <div className="w-[429px] flex">
         <h1 className="text-2xl font-semibold font-popins">Dua Page</h1>
       </div>
@@ -15,7 +15,7 @@ const Header = () => {
           <Image src={ToggleIcon} alt="Icon" className="w-3 h-[9px]" />
         </div>
       </div>
-    </div>
+    </nav>
   );
 };
 

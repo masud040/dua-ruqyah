@@ -11,7 +11,7 @@ import Image from "next/image";
 import SidebarLink from "./SidebarLink";
 const Sidebar = () => {
   return (
-    <div className="w-[100px]  min-h-full px-[14px] py-[31px] bg-white rounded-[24px] flex-center flex-col">
+    <aside className="w-[100px]  min-h-full px-[14px] py-[31px] bg-white rounded-[24px] flex-center flex-col">
       <div>
         <Image src={Logo} alt="Dua & Ruqyah" className="bg-white size-[73px]" />
       </div>
@@ -27,7 +27,7 @@ const Sidebar = () => {
       <div className="bg-primary size-[57px] flex-center rounded-[10px]">
         <Image src={DonateIcon} alt="Donate" className="bg-primary size-6" />
       </div>
-    </div>
+    </aside>
   );
 };
 
