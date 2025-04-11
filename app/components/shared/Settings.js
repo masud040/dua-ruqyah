@@ -11,7 +11,7 @@ const Settings = () => {
     setOpenedSetting((prev) => (prev === settingName ? "" : settingName));
   };
   return (
-    <div className="max-w-[330px] bg-white border rounded-[32px] boder-[0.5px] border-quaternary w-full h-full">
+    <div className="max-w-[330px] bg-white  rounded-[32px] border-[0.5px] border-quaternary w-full h-full">
       <h1 className="text-[20px] font-bold text-center pt-[35px]">Settings</h1>
       <div className="p-[21px] flex-column gap-[15px]">
         <div>
@@ -56,7 +56,13 @@ const Settings = () => {
                 alt="Appearance Settings"
               />
             </div>
-            <h2>Appearance Settings</h2>
+            <h2
+              className={` ${
+                openedSetting === "appearance" ? " font-medium" : "font-normal"
+              }`}
+            >
+              Appearance Settings
+            </h2>
           </button>
           {openedSetting === "appearance" && (
             <div className="overflow-hidden animate-expand">

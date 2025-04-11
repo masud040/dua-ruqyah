@@ -10,7 +10,7 @@ const Categories = async () => {
       <div className="py-[18px] bg-primary text-center rounded-tr-[10px] rounded-tl-[10px] text-white font-semibold text-[17px]">
         Category
       </div>
-      <div className="flex flex-col px-[15px] gap-[15px] py-[15px] h-[calc(100vh-234.5px)] bg-white border rounded-b-[10px] boder-[0.5px] border-quaternary border-t-0">
+      <div className="flex flex-col px-[15px] gap-[15px] py-[15px] h-[calc(100vh-234.5px)] bg-white rounded-b-[10px] border-[0.5px] border-quaternary border-t-0">
         <SearchByCategory />
         <div className="overflow-y-scroll">
           {categories?.categories?.length > 0 ? (
