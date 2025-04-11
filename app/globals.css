@@ -5,6 +5,7 @@
   --color-secondary: #f7f8fa;
   --color-tertiary-200: #f3f4f6;
   --color-tertiary-300: #e8f0f5;
+  --color-tertiary-400: #7e7e7e;
   --color-quaternary: #e2e2e2;
   --color-black: #393939;
   --color-white: #ffffff;
@@ -12,21 +13,24 @@
 
 @layer base {
   * {
-    @apply bg-secondary text-black p-0 m-0 scroll-smooth;
+    @apply p-0 m-0 scroll-smooth;
+  }
+  body {
+    @apply bg-secondary text-black;
   }
 
   ::-webkit-scrollbar {
-    width: 10px;
+    width: 6px;
   }
   ::-webkit-scrollbar-track {
     background: transparent;
   }
   ::-webkit-scrollbar-thumb {
-    background: #888;
-    border-radius: 10px;
+    background: #c0b9b9;
+    border-radius: 6px;
   }
   ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+    background: #7e7e7e;
   }
 }
 

@@ -13,9 +13,9 @@ const Sidebar = () => {
   return (
     <aside className="w-[100px]  min-h-full px-[14px] py-[31px] bg-white rounded-[24px] flex-center flex-col">
       <div>
-        <Image src={Logo} alt="Dua & Ruqyah" className="bg-white size-[73px]" />
+        <Image src={Logo} alt="Dua & Ruqyah" sizes="73" />
       </div>
-      <ul className="flex-1 flex-center flex-col gap-[27px] h-full bg-white">
+      <ul className="flex-1 flex-center flex-col gap-[27px] h-full">
         <SidebarLink Icon={Home} Name="Home" Path={"/"} />
         <SidebarLink Icon={Dua} Name="Dua" Path={"/dua"} />
         <SidebarLink Icon={Memorize} Name="Memorize" Path={"/memorize"} />
@@ -25,7 +25,12 @@ const Sidebar = () => {
         <SidebarLink Icon={Books} Name="Books" Path={"/books"} />
       </ul>
       <div className="bg-primary size-[57px] flex-center rounded-[10px]">
-        <Image src={DonateIcon} alt="Donate" className="bg-primary size-6" />
+        <Image
+          src={DonateIcon}
+          alt="Donate"
+          className="bg-primary"
+          sizes="24"
+        />
       </div>
     </aside>
   );
