@@ -23,10 +23,9 @@ export async function middleware(request) {
   );
   if (pathnameIsMissingLocale) {
     const locale = getLocale(request);
-
-    return NextResponse.redirect(
-      new URL(`/${locale}/${pathname}`, request.url)
-    );
+    const newUrl = new URL(`/${locale}${pathname}`, request.url);
+    newUrl.search = request.nextUrl.search;
+    return NextResponse.redirect(newUrl);
   }
 
   return NextResponse.next();
