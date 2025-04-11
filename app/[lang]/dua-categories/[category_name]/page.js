@@ -1,5 +1,6 @@
 import Categories from "@/app/components/duas/Categories";
 import PageContent from "@/app/components/duas/PageContent";
+import Settings from "@/app/components/shared/Settings";
 
 export default async function DuaCategoriesPage() {
   return (
@@ -12,7 +13,7 @@ export default async function DuaCategoriesPage() {
       {/* category page content */}
       <PageContent />
       {/* settings */}
-      {/* <Settings /> */}
+      <Settings />
     </section>
   );
 }

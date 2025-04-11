@@ -1,8 +1,22 @@
-export async function getAllCategories() {
-  const res = await fetch("http://localhost:3000/data/dua_categories.json");
-  if (!res.ok) {
-    throw new Error("Failed to fetch categories");
+import db from "../connectDB";
+
+// get main categories
+export function getMainCategories() {
+  try {
+    const rows = db.prepare("SELECT * From category").all();
+    return { success: true, data: rows };
+  } catch (error) {
+    return {
+      success: false,
+      message: "Failed to fetch main categories",
+      status: 500,
+    };
   }
-  const data = await res.json();
-  return data;
+}
+
+// get sub categories by category id
+export function getSubCategoriesByCatId(catId) {
+  const query = db.prepare("SELECT * FROM sub_category WHERE cat_id = ?");
+  const rows = query.all(catId);
+  return rows;
 }
