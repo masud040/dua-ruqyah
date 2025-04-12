@@ -5,7 +5,7 @@ import Copy from "@/public/assets/icons/copy.svg";
 import Report from "@/public/assets/icons/report.svg";
 import Share from "@/public/assets/icons/share.svg";
 import Image from "next/image";
-const DuaCard = ({ dua }) => {
+const DuaDetailsCard = ({ dua }) => {
   return (
     <div className="bg-white rounded-[10px] border-[0.5px] border-quaternary px-[30px] py-[15px] flex-column gap-7">
       <div className="flex-start gap-2.5">
@@ -13,7 +13,6 @@ const DuaCard = ({ dua }) => {
         <p className="text-primary font-semibold">
           {dua?.index + 1}. {dua?.dua_name_en}
         </p>
-        <p>{dua.id}</p>
       </div>
 
       {dua?.top_en && <p>{dua?.top_en}</p>}
@@ -55,4 +54,4 @@ const DuaCard = ({ dua }) => {
   );
 };
 
-export default DuaCard;
+export default DuaDetailsCard;

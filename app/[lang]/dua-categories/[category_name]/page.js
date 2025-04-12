@@ -1,4 +1,4 @@
-import DuaCard from "@/app/components/duas/DuaCard";
+import DuaDetailsCard from "@/app/components/duas/DuaDetailsCard";
 import {
   getDuasFromSubCategoryId,
   getSubCategoryNameById,
@@ -17,7 +17,7 @@ export default async function DuaDeatailsPage({ searchParams }) {
       </div>
       {duas?.data?.length > 0 ? (
         duas?.data?.map((dua, index) => (
-          <DuaCard key={index + 1} dua={{ ...dua, index }} />
+          <DuaDetailsCard key={index + 1} dua={{ ...dua, index }} />
         ))
       ) : (
         <div className="bg-white rounded-[10px] h-30 border-[0.5px] border-quaternary px-[30px] py-[15px] flex-center text-primary">
