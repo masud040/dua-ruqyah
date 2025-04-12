@@ -17,9 +17,10 @@ export default async function DashboardLayout({ children }) {
       <Categories />
       {/* category page content */}
 
-      <div className="flex-column gap-2.5 flex-1 w-full">{children}</div>
+      <div className="flex-column gap-2.5 flex-1 min-h-screen w-full">
+        {children}
+      </div>
 
-      {/* <PageContent /> */}
       {/* settings */}
       <Settings />
     </div>
