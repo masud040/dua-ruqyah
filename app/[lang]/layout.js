@@ -24,9 +24,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${poppins.variable} ${inter.variable} antialiased`}>
-        <div className="flex min-h-screen max-w-[1920px] mx-auto p-10 gap-[30px] ">
+        <div className="flex max-w-[1920px] mx-auto px-10 gap-[30px] ">
           {/* sidebar */}
-          <div className="w-[100px] relative">
+          <div className="w-[100px] pt-10 relative">
             <Sidebar />
           </div>
           <div className="flex-1 w-full">

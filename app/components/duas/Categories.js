@@ -6,7 +6,7 @@ const Categories = () => {
   const categories = getMainCategories();
 
   return (
-    <div className="w-[429px] relative">
+    <div className="w-[429px] hidden lg:flex relative">
       <div className="w-[429px] rounded-[10px] fixed">
         <div className="py-[18px] bg-primary text-center rounded-tr-[10px] rounded-tl-[10px] text-white font-semibold text-[17px]">
           Category

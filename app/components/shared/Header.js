@@ -4,8 +4,8 @@ import Image from "next/image";
 import SearchByDuaName from "../SearchByDuaName";
 const Header = () => {
   return (
-    <nav className="mt-[22px] w-[calc(100vw-210px)] h-[52px] relative">
-      <div className="flex-center w-[calc(100vw-210px)] gap-[30px] fixed z-50">
+    <nav className="w-[calc(100vw-210px)] h-[52px] relative">
+      <div className="flex-center pb-[22px] w-[calc(100vw-210px)] gap-[30px] fixed bg-secondary z-50  pt-10">
         <div className="w-[429px] flex">
           <h1 className="text-2xl font-semibold font-popins">Dua Page</h1>
         </div>

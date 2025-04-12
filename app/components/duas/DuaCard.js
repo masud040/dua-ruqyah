@@ -13,6 +13,7 @@ const DuaCard = ({ dua }) => {
         <p className="text-primary font-semibold">
           {dua?.index + 1}. {dua?.dua_name_en}
         </p>
+        <p>{dua.id}</p>
       </div>
 
       {dua?.top_en && <p className="text-justify">{dua?.top_en}</p>}

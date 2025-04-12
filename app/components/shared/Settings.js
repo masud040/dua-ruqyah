@@ -11,7 +11,7 @@ const Settings = () => {
     setOpenedSetting((prev) => (prev === settingName ? "" : settingName));
   };
   return (
-    <div className="w-[330px] relative">
+    <div className="w-[330px] hidden lg:flex relative">
       <div className="w-[330px] h-[calc(100vh-173px)] bg-white fixed rounded-[32px] border-[0.5px] border-quaternary">
         <h1 className="text-[20px] font-bold text-center pt-[35px]">
           Settings
