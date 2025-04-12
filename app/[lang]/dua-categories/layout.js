@@ -11,15 +11,13 @@ export default async function DashboardLayout({ children }) {
   return (
     <div
       className="flex justify-center items-start gap-[30px]
- w-full pt-[43px]"
+ w-full pt-[133px]"
     >
       {/* category */}
       <Categories />
       {/* category page content */}
 
-      <div className="flex-column gap-2.5 flex-1 min-h-screen w-full">
-        {children}
-      </div>
+      <div className="flex-column gap-2.5 flex-1 w-full">{children}</div>
 
       {/* settings */}
       <Settings />

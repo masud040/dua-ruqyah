@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
           <div className="flex-1 w-full">
             {/* haeder */}
             <Header />
-            <div className="h-[calc(100vh-173px)] mt-[19px]">{children}</div>
+            <div>{children}</div>
           </div>
         </div>
       </body>
