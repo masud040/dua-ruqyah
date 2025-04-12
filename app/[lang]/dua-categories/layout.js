@@ -1,15 +1,10 @@
-import { Inter } from "next/font/google";
-
 import Categories from "@/app/components/duas/Categories";
 import Settings from "@/app/components/shared/Settings";
 import "../../globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
-
 export const metadata = {
-  title: "Masud Rana | Dashboard",
-  description:
-    "Discover Masud Rana's portfolio - a skilled Frontend Developer specializing in React and Next.js. Explore projects, skills, and expertise in building modern web applications.",
+  title: "Dua & Ruqyah",
+  description: "This is a islamic dua and ruqyah app.",
 };
 
 export default async function DashboardLayout({ children }) {

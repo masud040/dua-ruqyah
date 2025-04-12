@@ -17,7 +17,7 @@ const inter = Inter({
 
 export const metadata = {
   title: "Dua & Ruqyah",
-  description: "This is a dua and ruqyah app",
+  description: "This is a islamic dua and ruqyah app.",
 };
 
 export default function RootLayout({ children }) {
