@@ -17,7 +17,7 @@
     @apply p-0 m-0 scroll-smooth;
   }
   body {
-    @apply bg-secondary text-black;
+    @apply bg-secondary text-black font-[--font-inter];
   }
 
   ::-webkit-scrollbar {

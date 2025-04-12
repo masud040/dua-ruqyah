@@ -16,10 +16,12 @@ const DuaCard = ({ dua }) => {
         <p>{dua.id}</p>
       </div>
 
-      {dua?.top_en && <p className="text-justify">{dua?.top_en}</p>}
+      {dua?.top_en && <p>{dua?.top_en}</p>}
 
       {dua?.dua_arabic && (
-        <p className="text-[24px] leading-[71.33px]">{dua?.dua_arabic}</p>
+        <p className="text-[24px] leading-[71.33px] text-end">
+          {dua?.dua_arabic}
+        </p>
       )}
       {dua?.dua_arabic && (
         <div className="flex-column gap-2.5">
@@ -33,7 +35,7 @@ const DuaCard = ({ dua }) => {
           </p>
         </div>
       )}
-      {dua?.bottom_en && <p className="text-justify">{dua?.bottom_en}</p>}
+      {dua?.bottom_en && <p>{dua?.bottom_en}</p>}
 
       {dua?.refference_en && (
         <div className="font-semibold">
