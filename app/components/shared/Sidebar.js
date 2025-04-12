@@ -11,18 +11,46 @@ import Image from "next/image";
 import SidebarLink from "./SidebarLink";
 const Sidebar = () => {
   return (
-    <aside className="w-[100px]  min-h-full px-[14px] py-[31px] bg-white rounded-[24px] flex-center flex-col">
+    <aside className="w-[100px] h-[calc(100vh-80px)] px-[14px] py-[31px] bg-white rounded-[24px] flex-center flex-col fixed z-40">
       <div>
         <Image src={Logo} alt="Dua & Ruqyah" sizes="73" />
       </div>
-      <ul className="flex-1 flex-center flex-col gap-[27px] h-full">
-        <SidebarLink Icon={Home} Name="Home" Path={"/"} />
-        <SidebarLink Icon={Menu} Name="Dua" Path={"/dua"} />
-        <SidebarLink Icon={Memorize} Name="Memorize" Path={"/memorize"} />
-        <SidebarLink Icon={Bookmarks} Name="Bookmarks" Path={"/bookmarks"} />
-        <SidebarLink Icon={Ruqyah} Name="Ruqyah" Path={"/ruqyah"} />
-        <SidebarLink Icon={DuaInfo} Name="DuaInfo" Path={"/dua-info"} />
-        <SidebarLink Icon={Books} Name="Books" Path={"/books"} />
+      <ul className="flex-1 flex-center flex-col gap-[27px]">
+        <SidebarLink
+          Icon={Home}
+          Name="Home"
+          Path={"/dua-categories/Dua's-Importance?subcat_id=1"}
+        />
+        <SidebarLink
+          Icon={Menu}
+          Name="Dua"
+          Path={"/dua-categories/Dua's-Importance?subcat_id=1"}
+        />
+        <SidebarLink
+          Icon={Memorize}
+          Name="Memorize"
+          Path={"/dua-categories/Dua's-Importance?subcat_id=1"}
+        />
+        <SidebarLink
+          Icon={Bookmarks}
+          Name="Bookmarks"
+          Path={"/dua-categories/Dua's-Importance?subcat_id=1"}
+        />
+        <SidebarLink
+          Icon={Ruqyah}
+          Name="Ruqyah"
+          Path={"/dua-categories/Dua's-Importance?subcat_id=1"}
+        />
+        <SidebarLink
+          Icon={DuaInfo}
+          Name="DuaInfo"
+          Path={"/dua-categories/Dua's-Importance?subcat_id=1"}
+        />
+        <SidebarLink
+          Icon={Books}
+          Name="Books"
+          Path={"/dua-categories/Dua's-Importance?subcat_id=1"}
+        />
       </ul>
       <div className="bg-primary size-[57px] flex-center rounded-[10px]">
         <Image

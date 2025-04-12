@@ -1,19 +1,30 @@
-import Categories from "@/app/components/duas/Categories";
-import PageContent from "@/app/components/duas/PageContent";
-import Settings from "@/app/components/shared/Settings";
+import DuaCard from "@/app/components/duas/DuaCard";
+import {
+  getDuasFromSubCategoryId,
+  getSubCategoryNameById,
+} from "@/app/db/queries";
 
-export default async function DuaCategoriesPage() {
+export default async function DuaDeatailsPage({ searchParams }) {
+  const { subcat_id } = await searchParams;
+  const subcat_name = getSubCategoryNameById(subcat_id);
+  const duas = getDuasFromSubCategoryId(subcat_id);
+  console.log(duas);
+
   return (
-    <section
-      className="flex-center gap-[30px] h-full
-   w-full "
-    >
-      {/* category */}
-      <Categories />
-      {/* category page content */}
-      <PageContent />
-      {/* settings */}
-      <Settings />
-    </section>
+    <>
+      <div className="flex-start border-[0.5px] border-quaternary rounded-[10px] font-medium px-[30px] py-[15px] gap-2.5 bg-white">
+        <p className="text-primary">Section:</p>
+        <p>{subcat_name?.data?.subcat_name_en}</p>
+      </div>
+      {duas?.data?.length > 0 ? (
+        duas?.data?.map((dua, index) => (
+          <DuaCard key={dua.id} dua={{ ...dua, index }} />
+        ))
+      ) : (
+        <div className="bg-white rounded-[10px] h-30 border-[0.5px] border-quaternary px-[30px] py-[15px] flex-center text-primary">
+          No Dua Found
+        </div>
+      )}
+    </>
   );
 }

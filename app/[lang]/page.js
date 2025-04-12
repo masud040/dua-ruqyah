@@ -1,3 +1,5 @@
+import { redirect } from "next/navigation";
+
 export default function Home() {
-  return <div className="">Hello</div>;
+  redirect("/dua-categories/Dua's-Importance?subcat_id=1");
 }
