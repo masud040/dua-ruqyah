@@ -83,24 +83,24 @@ const Category = ({ category }) => {
       {decodeCategoryName === formatted_name && (
         <div className="overflow-hidden animate-expand">
           <div className="ps-[24px]">
-            <ol className="relative border-l-2 border-dotted border-primary">
+            <ol className="relative border-l-2 border-dotted hover:cursor-pointer border-primary">
               {subCategories.length > 0 &&
                 subCategories.map((item) => (
                   <li
                     key={item.subcat_id}
-                    className="my-3 ml-[19px] flex-start"
+                    className="my-3 ml-[19px] flex-start hover:cursor-pointer"
                     onClick={() => {
                       handleSubCatClick(item.subcat_id);
                     }}
                   >
                     <span className="absolute -left-[5px] w-2 h-2 bg-primary rounded-full shadow flex items-center justify-center"></span>
-                    <h3
+                    <p
                       className={`font-medium ${
                         Number(subcat_id) === item.subcat_id && "text-primary"
                       }`}
                     >
                       {item?.subcat_name_en}
-                    </h3>
+                    </p>
                   </li>
                 ))}
             </ol>
